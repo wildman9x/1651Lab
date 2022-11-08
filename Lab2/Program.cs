@@ -51,6 +51,31 @@
             Console.WriteLine(r.ToString());
             
 
+            // Create a Shape2 object
+            Shape2 s2 = new Shape2();
+            Console.WriteLine(s2.ToString());
+            // Create a Rectangle2 object
+            Rectangle2 r2 = new Rectangle2();
+            Console.WriteLine(r2.ToString());
+            // Create a Rectangle2 object with length and width
+            Rectangle2 r3 = new Rectangle2(5, 10);
+            Console.WriteLine(r3.ToString());
+            // Create a Rectangle2 object with length, width, and color
+            Rectangle2 r4 = new Rectangle2(5, 10, "green");
+            Console.WriteLine(r4.ToString());
+            // getArea
+            Console.WriteLine("Area: {0}", r4.getArea());
+            // Create a triangle object
+            Triangle t2 = new Triangle(5, 10);
+            Console.WriteLine(t2.ToString());
+            // getArea
+            Console.WriteLine("Area: {0}", t2.getArea());
+            // Create a triangle object with color 
+            Triangle t3 = new Triangle(5, 10, "green");
+            Console.WriteLine(t3.ToString());
+            // getArea
+            Console.WriteLine("Area: {0}", t3.getArea());
+            
         }
     }
 }
