@@ -75,6 +75,16 @@
             Console.WriteLine(t3.ToString());
             // getArea
             Console.WriteLine("Area: {0}", t3.getArea());
+
+            // Create a cylinder object
+            Cylinder cy = new Cylinder();
+            Console.WriteLine(cy.ToString());
+            // Create a cylinder object with height and radius
+            Cylinder cy2 = new Cylinder(5, 10);
+            Console.WriteLine(cy2.ToString());
+            
+
+            Console.ReadLine();
             
         }
     }

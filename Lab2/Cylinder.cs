@@ -15,7 +15,7 @@ public class Cylinder : Circle3 {
         Height = height;
     }
 
-    public Cylinder(double height, double radius, String color) : base(radius, color) {
+    public Cylinder(double height, double radius, String color) : base(radius) {
         Height = height;
     }
 
