@@ -24,7 +24,7 @@ public class Rectangle2 : Shape2
         this.Width = Width;
     }
 
-    public double getArea()
+    public new double getArea()
     {
         return Length * Width;
     }

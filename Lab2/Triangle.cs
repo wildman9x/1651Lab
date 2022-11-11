@@ -25,7 +25,7 @@ public class Triangle : Shape2
         this.Height = Height;
     }
 
-    public double getArea()
+    public new double getArea()
     {
         return 0.5 * Base * Height;
     }

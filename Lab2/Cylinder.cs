@@ -19,7 +19,7 @@ public class Cylinder : Circle3 {
         Height = height;
     }
 
-    public double getArea() {
+    public new double getArea() {
         return 2 * Math.PI * Radius * Radius + 2 * Math.PI * Radius * Height;
     }
 
