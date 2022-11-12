@@ -1,3 +1,4 @@
+namespace TestConsoleApp{
 public class Book {
     public String Name { get; }
     public Author Author { get; }
@@ -25,4 +26,5 @@ public class Book {
         ", Price= " + this.Price + 
         ", QtyInStock= " + this.QtyInStock + "]";
     }
+}
 }

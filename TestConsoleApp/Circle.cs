@@ -1,3 +1,4 @@
+namespace TestConsoleApp{
 public class Circle
 {
     private double Radius { get; set; }
@@ -21,4 +22,5 @@ public class Circle
     public override string ToString(){
         return "Circle with radius " + Radius;
     }
+}
 }

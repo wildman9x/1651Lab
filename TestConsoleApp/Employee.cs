@@ -1,7 +1,7 @@
 // Employee class with int ID readonly
 //  string firstname, lastname readonly
 // int salary read-write
-
+namespace TestConsoleApp{
 public class Employee {
     private int ID { get; }
     private string FirstName { get; }
@@ -30,4 +30,4 @@ public class Employee {
     public override string ToString() {
         return "Employee[id=" + ID + ", name=" + fullName() + ", salary=" + Salary + "]";
     }
-}
+}}

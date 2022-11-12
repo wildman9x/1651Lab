@@ -1,3 +1,4 @@
+namespace TestConsoleApp{
 public class Author {
     public String Name { get; }
     public String Email {get; set;}
@@ -27,4 +28,4 @@ public class Author {
         ", Email= " + this.Email + 
         ", Gender= " + this.Gender + "]";
     }
-}
+}}

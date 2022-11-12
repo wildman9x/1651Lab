@@ -1,3 +1,4 @@
+namespace TestConsoleApp{
 // class book that accepts multiple authors
 public class Book2 {
     public String Name { get; }
@@ -39,4 +40,4 @@ public class Book2 {
         ", QtyInStock= " + this.QtyInStock + "]";
         return result;
     }
-}
+}}
