@@ -13,7 +13,7 @@ namespace TestConsoleApp
         {
             Console.WriteLine("Hello, World!");
             // create a new circle
-            Circle2 c = new Circle();
+            Circle c = new Circle();
             // print the circle
             Console.WriteLine(c);
             // print the area and circumference

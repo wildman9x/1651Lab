@@ -35,6 +35,9 @@
 
             // Create a Square, Circle, and Rectangle object with color and filled
             Square sq = new Square(5, "red", true);
+            // get length and width of sq
+            Console.WriteLine("Length of sq: {0}", sq.Length);
+            Console.WriteLine("Width of sq: {0}", sq.Width);
             Console.WriteLine(sq.ToString());
             // get the area and perimeter of the square
             Console.WriteLine("Area: {0}", sq.getArea());
