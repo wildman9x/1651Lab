@@ -3,10 +3,10 @@
 // int salary read-write
 namespace TestConsoleApp{
 public class Employee {
-    private int ID { get; }
-    private string FirstName { get; }
-    private string LastName { get; }
-    private int Salary { get; set; }
+    public int ID { get; }
+    public string FirstName { get;  }
+    public string LastName { get; }
+    public int Salary { get; set; }
 
     public Employee(int id, string firstName, string lastName, int salary) {
         ID = id;

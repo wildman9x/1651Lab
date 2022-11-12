@@ -24,7 +24,11 @@ public class Book2 {
     public String GetAuthorNames() {
         String authorNames = "";
         foreach(Author author in Authors) {
-            authorNames += author.Name + ", ";
+            if(authorNames == "") {
+                authorNames += author.Name;
+            } else {
+                authorNames += ", " + author.Name;
+            }
         }
         return authorNames;
     }
