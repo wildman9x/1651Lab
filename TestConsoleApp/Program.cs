@@ -68,6 +68,11 @@ namespace TestConsoleApp
             Book2 javaDummy = new Book2("Java for Dummy", authors, 19.99, 99);
 
             Console.WriteLine(javaDummy); // ToString()
+            // write all authors name
+            Console.WriteLine(javaDummy.GetAuthorNames());
+
+            // readkey to end program
+            Console.ReadKey();
         }
     }
 }

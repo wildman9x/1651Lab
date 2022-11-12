@@ -19,6 +19,15 @@ public class Book2 {
         QtyInStock = 0;
     }
 
+    // get author names
+    public String GetAuthorNames() {
+        String authorNames = "";
+        foreach(Author author in Authors) {
+            authorNames += author.Name + ", ";
+        }
+        return authorNames;
+    }
+
     public override string ToString()
     {
         String result = "Book[Name= " + this.Name +
