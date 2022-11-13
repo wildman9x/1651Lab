@@ -9,51 +9,41 @@ using System.Threading.Tasks;
 
     public class Rectangle : Shape
     {
-        private double width;
-        private double length;
+        public virtual double Width { get; set; }
+        public virtual double Length { get; set; }
 
         public Rectangle()
         {
-            width = 1.0;
-            length = 1.0;
+            Width = 1.0;
+            Length = 1.0;
         }
 
         public Rectangle(double width, double length)
         {
-            this.width = width;
-            this.length = length;
+            this.Width = width;
+            this.Length = length;
         }
 
         public Rectangle(double width, double length, String color, bool filled) : base(color, filled)
         {
-            this.width = width;
-            this.length = length;
+            this.Width = width;
+            this.Length = length;
         }
 
-        public double Width
-        {
-            get { return width; }
-            set { width = value; }
-        }
-
-        public double Length
-        {
-            get { return length; }
-            set { length = value; }
-        }
+        
 
         public double getArea()
         {
-            return width * length;
+            return Width * Length;
         }
 
         public double getPerimeter()
         {
-            return 2 * (width + length);
+            return 2 * (Width + Length);
         }
 
         public override string ToString()
         {
-            return string.Format("A Rectangle with width={0}, length={1}, which is a subclass of {2}", width, length, base.ToString());
+            return string.Format("A Rectangle with width={0}, length={1}, which is a subclass of {2}", Width, Length, base.ToString());
         }
     }

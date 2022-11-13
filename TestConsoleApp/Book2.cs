@@ -1,3 +1,4 @@
+namespace TestConsoleApp{
 // class book that accepts multiple authors
 public class Book2 {
     public String Name { get; }
@@ -19,6 +20,19 @@ public class Book2 {
         QtyInStock = 0;
     }
 
+    // get author names
+    public String GetAuthorNames() {
+        String authorNames = "";
+        foreach(Author author in Authors) {
+            if(authorNames == "") {
+                authorNames += author.Name;
+            } else {
+                authorNames += ", " + author.Name;
+            }
+        }
+        return authorNames;
+    }
+
     public override string ToString()
     {
         String result = "Book[Name= " + this.Name +
@@ -30,4 +44,4 @@ public class Book2 {
         ", QtyInStock= " + this.QtyInStock + "]";
         return result;
     }
-}
+}}

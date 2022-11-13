@@ -7,33 +7,55 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-    public class Square : Rectangle
+public class Square : Rectangle
+{
+
+    // override width and length to always be equal
+    public override double Width
     {
-        private double side;
-
-        public Square()
+        get
         {
-            side = 1.0;
+            return base.Width;
         }
-
-        public Square(double side)
+        set
         {
-            this.side = side;
-        }
-
-        public Square(double side, String color, bool filled) : base(side, side, color, filled)
-        {
-            this.side = side;
-        }
-
-        public double Side
-        {
-            get { return side; }
-            set { side = value; }
-        }
-
-        public override string ToString()
-        {
-            return string.Format("A Square with side={0}, which is a subclass of {1}", side, base.ToString());
+            base.Width = value;
+            base.Length = value;
         }
     }
+
+    public override double Length
+    {
+        get
+        {
+            return base.Length;
+        }
+        set
+        {
+            base.Length = value;
+            base.Width = value;
+        }
+    }
+
+    public Square()
+    {
+        Width = 1.0;
+    }
+
+    public Square(double side) : base(side, side)
+    {
+        Width = side;
+    }
+
+    public Square(double side, String color, bool filled) : base(side, side, color, filled)
+    {
+        Width = side;
+    }
+
+
+
+    public override string ToString()
+    {
+        return string.Format("A Square with side={0}, which is a subclass of {1}", Width, base.ToString());
+    }
+}

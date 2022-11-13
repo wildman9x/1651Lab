@@ -13,13 +13,24 @@ namespace TestConsoleApp
         {
             Console.WriteLine("Hello, World!");
             // create a new circle
-            Circle2 c = new Circle();
+            Circle c = new Circle();
             // print the circle
             Console.WriteLine(c);
             // print the area and circumference
             Console.WriteLine("Area: " + c.Area());
             Console.WriteLine("Circumference: " + c.Circumference());
 
+            // create a new circle with radius 3.0
+            Circle c2 = new Circle(3.0);
+            // print the circle
+            Console.WriteLine(c2);
+            // print the area and circumference
+            Console.WriteLine("Area: " + c2.Area());
+            Console.WriteLine("Circumference: " + c2.Circumference());
+            // create employee
+            Employee e = new Employee(123, "John", "Smith", 1000);
+            // print the employee
+            Console.WriteLine(e);
             // Construct an author instance
 
             Author ahTeck = new Author("Tan Ah Teck", "ahteck@nowhere.com", 'm');
@@ -68,6 +79,11 @@ namespace TestConsoleApp
             Book2 javaDummy = new Book2("Java for Dummy", authors, 19.99, 99);
 
             Console.WriteLine(javaDummy); // ToString()
+            // write all authors name
+            Console.WriteLine(javaDummy.GetAuthorNames());
+
+            // readkey to end program
+            Console.ReadKey();
         }
     }
 }

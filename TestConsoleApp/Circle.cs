@@ -1,7 +1,7 @@
+namespace TestConsoleApp{
 public class Circle
 {
-    private double Radius { get; set; }
-    public double pi = Math.PI;
+    public double Radius { get; set; }
     public Circle(){
         Radius = 1;
     }
@@ -11,14 +11,15 @@ public class Circle
     }
 
     public double Area(){
-        return pi * Radius * Radius;
+        return Math.PI * Radius * Radius;
     }
 
     public double Circumference(){
-        return 2 * pi * Radius;
+        return 2 * Math.PI * Radius;
     }
 
     public override string ToString(){
         return "Circle with radius " + Radius;
     }
+}
 }
