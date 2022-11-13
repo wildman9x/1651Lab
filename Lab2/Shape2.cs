@@ -6,26 +6,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-public class Shape2
+namespace Lab2
 {
-    public String Color { get; private set; }
-
-    public Shape2()
+    public class Shape2
     {
-        Color = "red";
-    }
+        public String Color { get; private set; }
 
-    public Shape2(String color)
-    {
-        Color = color;
-    }
+        public Shape2()
+        {
+            Color = "red";
+        }
 
-    public double getArea() {
-        return 0.0;
-    }
+        public Shape2(String color)
+        {
+            Color = color;
+        }
 
-    public override string ToString()
-    {
-        return "Shape[color=" + Color + "]";
+        public double getArea()
+        {
+            return 0.0;
+        }
+
+        public override string ToString()
+        {
+            return "Shape[color=" + Color + "]";
+        }
     }
 }

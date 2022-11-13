@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
+namespace Lab2 {
     public class Circle2 : Shape
     {
         private double radius;
@@ -47,3 +47,4 @@ using System.Threading.Tasks;
             return string.Format("A Circle with radius={0}, which is a subclass of {1}", radius, base.ToString());
         }
     }
+}

@@ -6,7 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
+namespace Lab2
+{
     public class Rectangle : Shape
     {
         public virtual double Width { get; set; }
@@ -47,3 +48,4 @@ using System.Threading.Tasks;
             return string.Format("A Rectangle with width={0}, length={1}, which is a subclass of {2}", Width, Length, base.ToString());
         }
     }
+}

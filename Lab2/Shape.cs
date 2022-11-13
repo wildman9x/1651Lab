@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
+namespace Lab2 {
     public class Shape
     {
         private String color;
@@ -41,3 +41,4 @@ using System.Threading.Tasks;
             return string.Format("A Shape with color of {0} and {1}", color, filled ? "filled" : "not filled");
         }
     }
+}

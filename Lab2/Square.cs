@@ -6,56 +6,57 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-public class Square : Rectangle
-{
-
-    // override width and length to always be equal
-    public override double Width
+namespace Lab2 {
+    public class Square : Rectangle
     {
-        get
+
+        // override width and length to always be equal
+        public override double Width
         {
-            return base.Width;
+            get
+            {
+                return base.Width;
+            }
+            set
+            {
+                base.Width = value;
+                base.Length = value;
+            }
         }
-        set
+
+        public override double Length
         {
-            base.Width = value;
-            base.Length = value;
+            get
+            {
+                return base.Length;
+            }
+            set
+            {
+                base.Length = value;
+                base.Width = value;
+            }
         }
-    }
 
-    public override double Length
-    {
-        get
+        public Square()
         {
-            return base.Length;
+            Width = 1.0;
         }
-        set
+
+        public Square(double side) : base(side, side)
         {
-            base.Length = value;
-            base.Width = value;
+            Width = side;
         }
-    }
 
-    public Square()
-    {
-        Width = 1.0;
-    }
-
-    public Square(double side) : base(side, side)
-    {
-        Width = side;
-    }
-
-    public Square(double side, String color, bool filled) : base(side, side, color, filled)
-    {
-        Width = side;
-    }
+        public Square(double side, String color, bool filled) : base(side, side, color, filled)
+        {
+            Width = side;
+        }
 
 
 
-    public override string ToString()
-    {
-        return string.Format("A Square with side={0}, which is a subclass of {1}", Width, base.ToString());
+        public override string ToString()
+        {
+            return string.Format("A Square with side={0}, which is a subclass of {1}", Width, base.ToString());
+        }
     }
 }
