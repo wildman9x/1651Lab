@@ -17,12 +17,14 @@ namespace Lab2 {
         {
             if (courses.Contains(course))
             {
+                Console.WriteLine("Course already exists");
                 return false;
             }
             else
             {
                 courses.Add(course);
                 numCourses++;
+                Console.WriteLine("Course " + course + " has been added");
                 return true;
             }
         }
@@ -33,10 +35,12 @@ namespace Lab2 {
             {
                 courses.Remove(course);
                 numCourses--;
+                Console.WriteLine("Course " + course + " has been removed");
                 return true;
             }
             else
             {
+                Console.WriteLine("Course does not exist");
                 return false;
             }
         }

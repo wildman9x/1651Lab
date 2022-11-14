@@ -3,20 +3,25 @@ namespace Lab2
 {
     public class Circle3
     {
-        public double Radius { get; private set; }
+        public readonly double radius = 0;
+
+        public double Radius
+        {
+            get { return radius; }
+        }
 
         public Circle3()
         {
-            Radius = 1.0;
+            radius = 1.0;
         }
 
         public Circle3(double radius)
         {
-            Radius = radius;
+            radius = radius;
         }
 
 
-        public double getArea()
+        public virtual double getArea()
         {
             return Math.PI * Radius * Radius;
         }

@@ -10,16 +10,21 @@ namespace Lab2
 {
     public class Shape2
     {
-        public String Color { get; private set; }
+        private String color;
 
+        public String Color
+        {
+            get { return color; }
+            
+        }
         public Shape2()
         {
-            Color = "red";
+            color = "red";
         }
 
         public Shape2(String color)
         {
-            Color = color;
+            this.color = color;
         }
 
         public double getArea()
@@ -29,7 +34,7 @@ namespace Lab2
 
         public override string ToString()
         {
-            return "Shape[color=" + Color + "]";
+            return "Shape[color=" + color + "]";
         }
     }
 }

@@ -3,29 +3,34 @@ namespace Lab2
 {
     public class Cylinder : Circle3
     {
-        public double Height { get; private set; }
+        public readonly double height = 0;
+
+        public double Height
+        {
+            get { return height; }
+        }
 
         public Cylinder()
         {
-            Height = 1.0;
+            height = 1.0;
         }
 
         public Cylinder(double height)
         {
-            Height = height;
+            this.height = height;
         }
 
         public Cylinder(double height, double radius) : base(radius)
         {
-            Height = height;
+            this.height = height;
         }
 
         public Cylinder(double height, double radius, String color) : base(radius)
         {
-            Height = height;
+            this.height = height;
         }
 
-        public new double getArea()
+        public override double getArea()
         {
             return 2 * Math.PI * Radius * Radius + 2 * Math.PI * Radius * Height;
         }
