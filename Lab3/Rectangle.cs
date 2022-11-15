@@ -4,29 +4,29 @@
 
 namespace Lab3 {
     class Rectangle : Shape {
-        private int Length { get; set; }
-        private int Width { get; set; }
+        private int length = 0;
+        private int width = 0;
 
         public Rectangle() : base() {
-            Length = 1;
-            Width = 1;
+            length = 1;
+            width = 1;
         }
         public Rectangle(int length, int width) {
-            Length = length;
-            Width = width;
+            this.length = length;
+            this.width = width;
         }
 
         // constructor that also takes in a color
         public Rectangle(int length, int width, string color) : base(color) {
-            Length = length;
-            Width = width;
+            this.length = length;
+            this.width = width;
         }
 
         public override double GetArea() {
-            return Length * Width;
+            return length * width;
         }
         public override string ToString() {
-            return "Rectangle with length " + Length + " and width " + Width;
+            return "Rectangle with length " + length + " and width " + width;
         }
     }
 }

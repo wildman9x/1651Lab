@@ -5,32 +5,32 @@
 // default constructor that sets x and y to 0
 namespace Lab3 {
     class MovablePoint : IMovable {
-        private int X { get; set; }
-        private int Y { get; set; }
+        private int x = 0;
+        private int y = 0;
 
         public MovablePoint(int x, int y) {
-            X = x;
-            Y = y;
+            this.x = x;
+            this.y = y;
         }
         public MovablePoint() {
-            X = 0;
-            Y = 0;
+            x = 0;
+            y = 0;
         }
 
         public void MoveUp() {
-            Y++;
+            y++;
         }
         public void MoveDown() {
-            Y--;
+            y--;
         }
         public void MoveLeft() {
-            X--;
+            x--;
         }
         public void MoveRight() {
-            X++;
+            x++;
         }
         public override string ToString() {
-            return "MovablePoint with x = " + X + " and y = " + Y;
+            return "MovablePoint with x = " + x + " and y = " + y;
         }
     }
 }

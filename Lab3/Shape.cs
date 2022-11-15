@@ -4,18 +4,18 @@
 
 namespace Lab3 {
     abstract class Shape {
-        public string Color { get; set; }
+        private string color;
         // constructor
         public Shape(string color) {
-            Color = color;
+            this.color = color;
         }
         // default constructor
         public Shape() {
-            Color = "red";
+            color = "red";
         }
         public abstract double GetArea();
         public virtual string ToString() {
-            return "Shape with color of " + Color;
+            return "Shape with color of " + color;
         }
     }
 }

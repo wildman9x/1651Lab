@@ -5,7 +5,7 @@
 namespace Lab3 {
     abstract class Animal {
         public readonly int Legs;
-        public Animal(int legs) {
+        protected Animal(int legs) {
             Legs = legs;
         }
         public virtual void Walk() {
