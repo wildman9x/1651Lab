@@ -3,7 +3,7 @@ namespace Lab2
 {
     public class Circle3
     {
-        public readonly double radius = 0;
+        private readonly double radius;
 
         public double Radius
         {
@@ -17,7 +17,7 @@ namespace Lab2
 
         public Circle3(double radius)
         {
-            radius = radius;
+            this.radius = radius;
         }
 
 
