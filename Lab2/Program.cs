@@ -85,7 +85,7 @@
             Cylinder cy = new Cylinder();
             Console.WriteLine(cy.ToString());
             // Create a cylinder object with height and radius
-            Cylinder cy2 = new Cylinder(5, 10);
+            Cylinder cy2 = new Cylinder(5, 20);
             Console.WriteLine(cy2.ToString());
             // volume and surface area
             Console.WriteLine("Volume: {0}", cy2.getVolume());
